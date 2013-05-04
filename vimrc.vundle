@@ -1,0 +1,11 @@
+"" Add Vundle plugin to the runtime path
+set runtimepath+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"" Bundles for use with Vundle
+
+" gruvbox colorscheme
+Bundle 'morhetz/gruvbox'
+
+
