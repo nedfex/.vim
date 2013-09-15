@@ -8,4 +8,5 @@ Bundle 'gmarik/vundle'
 " gruvbox colorscheme
 Bundle 'morhetz/gruvbox'
 
-
+" gruvbox colorschee
+Bundle 'scrooloose/nerdtree'
