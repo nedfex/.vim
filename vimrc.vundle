@@ -14,7 +14,6 @@ Bundle 'scrooloose/nerdtree'
 " Powerline Enhanced VIM menu info
 if has ('gui_running' )
   Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
-  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
   set laststatus=2
 endif
 

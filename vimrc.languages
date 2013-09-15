@@ -1,0 +1,8 @@
+"" Python specific settings
+augroup vimrc_autocmds
+  autocmd!
+  " Highlight characters past column 80
+  autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
+  autocmd FileType python match Excess /\%80.*/
+  autocmd FileType python set nowrap
+augroup END
