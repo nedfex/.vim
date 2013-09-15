@@ -19,7 +19,7 @@ if has ('gui_running' )
 else
   set t_Co=256                    " enable 256 color use for terminal
 endif
-set background=dark               " toggle dark version of gruvbox or solarized, alt=light
+set background=dark               " toggle dark background, alt=light
 
 "" Whitespace
 set nowrap				                " don't wrap lines
@@ -36,3 +36,12 @@ set number          " enable line numbers
 
 "" Mappings
 :imap jj <Esc>      " map jj to the <esc> key
+
+"" Python specific settings
+augroup vimrc_autocmds
+  autocmd!
+  " Highlight characters past column 80
+  autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
+  autocmd FileType python match Excess /\%80.*/
+  autocmd FileType python set nowrap
+augroup END
