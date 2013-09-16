@@ -19,6 +19,3 @@ endif
 
 " Fugitive git integration
 Bundle 'tpope/vim-fugitive'
-
-" Python Mode
-Bundle 'klen/python-mode'
