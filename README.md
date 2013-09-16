@@ -1,6 +1,6 @@
 .vim
 ====
-My Vimrc files.
+My Vimrc setup.
 
 These require Vundle to run:
 
