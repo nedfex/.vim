@@ -13,7 +13,7 @@ set showcmd				                                      " display incomplete comman
 
 if has ('gui_running' )
   colorscheme gruvbox                                   " set colorscheme to gruvbox
-  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13.5
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
   set guioptions-=T                                     " remove toolbar in gui
   set guioptions-=m                                     " remove menubar in gui
   set guioptions-=r                                     " remove scrollbar in gui
@@ -47,3 +47,4 @@ command WQ wq
 command Wq wq
 command W w
 command Q q
+cmap nt NERDTreeToggle
