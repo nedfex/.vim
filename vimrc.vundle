@@ -17,3 +17,9 @@ set laststatus=2
 
 " Fugitive git integration
 Bundle 'tpope/vim-fugitive'
+
+" SuperTab
+Bundle 'ervandew/supertab'
+
+" SuperTab
+Bundle 'Rip-Rip/clang_complete'
