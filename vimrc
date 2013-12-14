@@ -47,4 +47,4 @@ command WQ wq
 command Wq wq
 command W w
 command Q q
-cmap nt NERDTreeToggle
+noremap :nt :NERDTree

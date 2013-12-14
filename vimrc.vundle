@@ -27,3 +27,6 @@ let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchain
 
 " Syntastic (Syntax checker)
 Bundle 'scrooloose/syntastic'
+
+" CtrlP (Search)
+Bundle 'kien/ctrlp.vim'
