@@ -48,4 +48,4 @@ command Wq wq
 command W w
 command Q q
 noremap :nt :NERDTree
-nnoremap <esc> :nohls<return><esc>
+nnoremap <CR> :nohls<CR><CR>
