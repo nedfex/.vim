@@ -40,6 +40,9 @@ set ignorecase                    " searchs are case insensitive ...
 set smartcase	                    " ... unless they contain at least one capital letter
 set number                        " enable line numbers
 
+"" Completion
+set omnifunc=syntaxcomplete#Complete
+
 "" Mappings
 inoremap jj <Esc>
 inoremap jk <Esc>

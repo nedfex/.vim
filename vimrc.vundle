@@ -30,3 +30,6 @@ Bundle 'scrooloose/syntastic'
 
 " CtrlP (Search)
 Bundle 'kien/ctrlp.vim'
+
+" Latex-Box
+Bundle 'LaTeX-Box-Team/LaTeX-Box'
