@@ -33,3 +33,12 @@ Bundle 'kien/ctrlp.vim'
 
 " Latex-Box
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
+
+" Abolish find and replace
+Bundle 'tpope/vim-abolish'
+
+" Vim-Ipython
+Bundle 'ivanov/vim-ipython'
+
+" Go Lang
+Bundle 'jnwhiteh/vim-golang'

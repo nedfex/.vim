@@ -11,16 +11,17 @@ syntax enable                                           " enable color coding of
 set encoding=utf-8
 set showcmd				                                      " display incomplete commands
 
+colorscheme gruvbox                                     " set colorscheme to gruvbox
 if has ('gui_running' )
-  colorscheme gruvbox                                   " set colorscheme to gruvbox
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
   set guioptions-=T                                     " remove toolbar in gui
   set guioptions-=m                                     " remove menubar in gui
   set guioptions-=r                                     " remove scrollbar in gui
+  set background=dark                                   " toggle dark background, alt=light
 else
   set t_Co=256                                          " enable 256 color use for terminal
+  hi Normal guibg=NONE ctermbg=NONE                     " Transparent Background
 endif
-set background=dark                                     " toggle dark background, alt=light
 
 " Columns
 set textwidth=100                                       " highlight columns that ...
