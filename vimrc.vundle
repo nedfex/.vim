@@ -42,3 +42,8 @@ Bundle 'ivanov/vim-ipython'
 
 " Go Lang
 Bundle 'jnwhiteh/vim-golang'
+
+" SnipMate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
