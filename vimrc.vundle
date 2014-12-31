@@ -1,49 +1,58 @@
 "" Add Vundle plugin to the runtime path
-set runtimepath+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
 "" Bundles for use with Vundle
 
 " gruvbox colorscheme
-Bundle 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox'
 
 " NERDTree file system explorer
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 " Airline Enhanced VIM menu info
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 set laststatus=2
 
 " Fugitive git integration
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " SuperTab
-Bundle 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 
 " Clang
-Bundle 'Rip-Rip/clang_complete'
-let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
+Plugin 'Rip-Rip/clang_complete'
+let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer
+                           \/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
 
 " Syntastic (Syntax checker)
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " CtrlP (Search)
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 " Latex-Box
-Bundle 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
 " Abolish find and replace
-Bundle 'tpope/vim-abolish'
+Plugin 'tpope/vim-abolish'
 
 " Vim-Ipython
-Bundle 'ivanov/vim-ipython'
+Plugin 'ivanov/vim-ipython'
+
+" Jedi-Vim (python autocompletion)
+Plugin 'davidhalter/jedi-vim'
 
 " Go Lang
-Bundle 'jnwhiteh/vim-golang'
+Plugin 'jnwhiteh/vim-golang'
 
-" SnipMate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
+" UltiSnips
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger="<tab>"         "Don't use tab with you-complete-me
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
+
+call vundle#end()
