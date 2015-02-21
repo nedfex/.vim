@@ -1,58 +1,60 @@
-"" Add Vundle plugin to the runtime path
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/autoload')
 
-"" Bundles for use with Vundle
+" Solarize colorscheme
+Plug 'altercation/vim-colors-solarized'
 
-" gruvbox colorscheme
-Plugin 'morhetz/gruvbox'
+" Gruvbox colorscheme
+Plug 'morhetz/gruvbox'
 
 " NERDTree file system explorer
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " Airline Enhanced VIM menu info
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 set laststatus=2
 
 " Fugitive git integration
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " SuperTab
-Plugin 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 " Clang
-Plugin 'Rip-Rip/clang_complete'
+Plug 'Rip-Rip/clang_complete'
 let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer
                            \/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
 
 " Syntastic (Syntax checker)
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 " CtrlP (Search)
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 
 " Latex-Box
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 " Abolish find and replace
-Plugin 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish'
 
 " Vim-Ipython
-Plugin 'ivanov/vim-ipython'
+Plug 'ivanov/vim-ipython'
 
 " Jedi-Vim (python autocompletion)
-Plugin 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 
 " Go Lang
-Plugin 'jnwhiteh/vim-golang'
+Plug 'jnwhiteh/vim-golang'
+
+" ctags
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 
 " UltiSnips
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"         "Don't use tab with you-complete-me
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
-call vundle#end()
+call plug#end()

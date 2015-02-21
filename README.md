@@ -4,5 +4,6 @@ My Vimrc setup.
 
 These require Vundle to run:
 
-1. git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-2. open vim and run :BundleInstall!
+1. git clone curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+2. open vim and run :PlugInstall
