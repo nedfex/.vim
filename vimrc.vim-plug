@@ -1,60 +1,109 @@
-call plug#begin('~/.vim/autoload')
+scriptencoding utf-8
 
+call plug#begin('~/.vim/autoload')
+let g:plug_threads = 1                      "Disable Ruby multiple file download
+
+"" Appearance
 " Solarize colorscheme
 Plug 'altercation/vim-colors-solarized'
 
 " Gruvbox colorscheme
 Plug 'morhetz/gruvbox'
 
-" NERDTree file system explorer
-Plug 'scrooloose/nerdtree'
-
-" Airline Enhanced VIM menu info
+" Airline (Enhanced VIM menu info)
 Plug 'bling/vim-airline'
+let g:airline_theme = 'base16'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 
-" Fugitive git integration
+" Bufferline (Buffer info for airline)
+Plug 'bling/vim-bufferline'
+
+" Indent-Guides
+Plug 'nathanaelkane/vim-indent-guides'
+
+"" Outside Vim Integration
+" Fugitive (Git integration)
 Plug 'tpope/vim-fugitive'
-
-" SuperTab
-Plug 'ervandew/supertab'
-
-" Clang
-Plug 'Rip-Rip/clang_complete'
-let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer
-                           \/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
 
 " Syntastic (Syntax checker)
 Plug 'scrooloose/syntastic'
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
 
+" Vimlint (VimL syntax checking)
+Plug 'syngan/vim-vimlint'
+Plug 'ynkdir/vim-vimlparser'
+
+"" General Completion
+" SuperTab (Easier autocomplete)
+Plug 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "c-x><c-u>"
+
+" Surround (Help with quotes)
+Plug 'tpope/vim-surround'
+
+" NerdCommenter
+Plug 'scrooloose/nerdcommenter'
+
+" Unitsnips (Snippets engine)
+Plug 'SirVer/ultisnips'
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
+
+" Vim-snippets (Library of snippets)
+Plug 'honza/vim-snippets'
+
+" DelimitMate
+Plug 'Raimondi/delimitMate'
+
+"" Search
 " CtrlP (Search)
 Plug 'kien/ctrlp.vim'
 
+" Ack
+Plug 'mileszs/ack.vim'
+
+" Abolish (Find and replace)
+Plug 'tpope/vim-abolish'
+
+" Easymotion
+Plug 'Lokaltog/vim-easymotion'
+
+" NERDTree (File system explorer)
+Plug 'scrooloose/nerdtree'
+
+""Latex
 " Latex-Box
 Plug 'LaTeX-Box-Team/LaTeX-Box'
 
-" Abolish find and replace
-Plug 'tpope/vim-abolish'
-
-" Vim-Ipython
-Plug 'ivanov/vim-ipython'
-
-" Jedi-Vim (python autocompletion)
+"" Python
 Plug 'davidhalter/jedi-vim'
 
-" Go Lang
-Plug 'jnwhiteh/vim-golang'
-
+""C/C++
 " ctags
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 
-" UltiSnips
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger="<tab>"         "Don't use tab with you-complete-me
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
+" Tagbar
+Plug 'majutsushi/tagbar'
+
+" Clang Complete
+Plug 'Rip-Rip/clang_complete'
+let g:clang_use_library = 1
+let g:clang_library_path = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib"
+let g:clang_auto_select = 1
+let g:clang_complete_auto = 1
+let g:clang_complete_copen = 1
+let g:clang_complete_hl_errors = 1
+let g:clang_periodic_quickfix = 1
+let g:clang_trailing_placeholder = 1
+let g:clang_close_preview = 1
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'ultisnips'
+let g:clang_debug = 1
 
 call plug#end()

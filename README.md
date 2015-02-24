@@ -2,7 +2,7 @@
 ====
 My Vimrc setup.
 
-These require Vundle to run:
+These require vim-plug to run:
 
 1. git clone curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
