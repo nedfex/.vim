@@ -40,22 +40,21 @@ Plug 'ynkdir/vim-vimlparser'
 " SuperTab (Easier autocomplete)
 Plug 'ervandew/supertab'
 let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "c-x><c-u>"
 
 " Surround (Help with quotes)
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 
 " NerdCommenter
-Plug 'scrooloose/nerdcommenter'
+"Plug 'scrooloose/nerdcommenter'
 
 " Unitsnips (Snippets engine)
-Plug 'SirVer/ultisnips'
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<c-b>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
+"Plug 'SirVer/ultisnips'
+"let g:UltiSnipsExpandTrigger = "<tab>"
+"let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 
 " Vim-snippets (Library of snippets)
-Plug 'honza/vim-snippets'
+"Plug 'honza/vim-snippets'
 
 " DelimitMate
 Plug 'Raimondi/delimitMate'
@@ -65,16 +64,16 @@ Plug 'Raimondi/delimitMate'
 Plug 'kien/ctrlp.vim'
 
 " Ack
-Plug 'mileszs/ack.vim'
+"Plug 'mileszs/ack.vim'
 
 " Abolish (Find and replace)
-Plug 'tpope/vim-abolish'
+"Plug 'tpope/vim-abolish'
 
 " Easymotion
-Plug 'Lokaltog/vim-easymotion'
+"Plug 'Lokaltog/vim-easymotion'
 
 " NERDTree (File system explorer)
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 
 ""Latex
 " Latex-Box
@@ -85,11 +84,11 @@ Plug 'davidhalter/jedi-vim'
 
 ""C/C++
 " ctags
-Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc'
+"Plug 'xolox/vim-easytags'
+"Plug 'xolox/vim-misc'
 
 " Tagbar
-Plug 'majutsushi/tagbar'
+"Plug 'majutsushi/tagbar'
 
 " Clang Complete
 Plug 'Rip-Rip/clang_complete'
@@ -99,11 +98,19 @@ let g:clang_auto_select = 1
 let g:clang_complete_auto = 1
 let g:clang_complete_copen = 1
 let g:clang_complete_hl_errors = 1
-let g:clang_periodic_quickfix = 1
 let g:clang_trailing_placeholder = 1
 let g:clang_close_preview = 1
-let g:clang_snippets = 1
-let g:clang_snippets_engine = 'ultisnips'
+"let g:clang_snippets = 1
+"let g:clang_snippets_engine = 'ultisnips'
 let g:clang_debug = 1
+
+""Scheme
+" Racket syntax
+Plug 'wlangstroth/vim-racket'
+
+" vim-slime (REPL)
+Plug 'jpalardy/vim-slime'
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 
 call plug#end()

@@ -1,7 +1,7 @@
 set nocompatible                         "choose no compatibility with legacy vi
 
 "" vim-plug setup
-let vim_plug_path = expand('~/.vim/vimrc.vim-plug')
+let g:vim_plug_path = expand('~/.vim/vimrc.vim-plug')
 if filereadable(vim_plug_path)
     execute 'source' vim_plug_path
 endif
@@ -10,12 +10,15 @@ endif
 syntax enable                      " enable color coding of syntax
 filetype plugin indent on          " enable loading filetype and indent settings
 
+" do not auto comment next line
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
 "" Colors
 set t_Co=256                                 " enable 256 color use for terminal
 colorscheme solarized
 
 highlight Normal ctermbg=None                " transparent Background
-highlight Comment cterm=underline,bold       " make comments easier to see
+highlight Comment cterm=standout,bold        " make comments easier to see
 highlight ColorColumn ctermbg=235            " colorcolumn color
 
 "" General Display
@@ -28,8 +31,8 @@ set wildmenu                                       " graphical autocomplete
 set lazyredraw                                     " redraw only when needed
 set cursorline                                     " highlight current line
 
-set textwidth=80                                    " highlight columns that ...
-set colorcolumn=+1                                  " ... extend past textwidth
+set textwidth=80                                   " highlight columns that ...
+set colorcolumn=+1                                 " ... extend past textwidth
 
 "" Tabs
 set expandtab			   " use spaces not tabs
