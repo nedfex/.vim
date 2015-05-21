@@ -82,6 +82,9 @@ Plug 'LaTeX-Box-Team/LaTeX-Box'
 "" Python
 Plug 'davidhalter/jedi-vim'
 
+"" Python documentation
+Plug 'fs111/pydoc.vim'
+
 ""C/C++
 " ctags
 "Plug 'xolox/vim-easytags'
