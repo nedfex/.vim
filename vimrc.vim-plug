@@ -80,10 +80,12 @@ Plug 'kien/ctrlp.vim'
 Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 "" Python
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
+"let g:jedi#popup_on_dot = 0
+"Plug 'klen/python-mode'
 
-"" Python documentation
-Plug 'fs111/pydoc.vim'
+""" Julia
+"Plug 'JuliaLang/julia-vim'
 
 ""C/C++
 " ctags
@@ -93,27 +95,27 @@ Plug 'fs111/pydoc.vim'
 " Tagbar
 "Plug 'majutsushi/tagbar'
 
-" Clang Complete
-Plug 'Rip-Rip/clang_complete'
-let g:clang_use_library = 1
-let g:clang_library_path = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib"
-let g:clang_auto_select = 1
-let g:clang_complete_auto = 1
-let g:clang_complete_copen = 1
-let g:clang_complete_hl_errors = 1
-let g:clang_trailing_placeholder = 1
-let g:clang_close_preview = 1
-"let g:clang_snippets = 1
-"let g:clang_snippets_engine = 'ultisnips'
-let g:clang_debug = 1
+"" Clang Complete
+"Plug 'Rip-Rip/clang_complete'
+"let g:clang_use_library = 1
+"let g:clang_library_path = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib"
+"let g:clang_auto_select = 1
+"let g:clang_complete_auto = 1
+"let g:clang_complete_copen = 1
+"let g:clang_complete_hl_errors = 1
+"let g:clang_trailing_placeholder = 1
+"let g:clang_close_preview = 1
+""let g:clang_snippets = 1
+""let g:clang_snippets_engine = 'ultisnips'
+"let g:clang_debug = 1
 
 ""Scheme
 " Racket syntax
-Plug 'wlangstroth/vim-racket'
+"Plug 'wlangstroth/vim-racket'
 
-" vim-slime (REPL)
-Plug 'jpalardy/vim-slime'
-let g:slime_target = "tmux"
-let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
+"" vim-slime (REPL)
+"Plug 'jpalardy/vim-slime'
+"let g:slime_target = "tmux"
+"let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 
 call plug#end()
