@@ -80,9 +80,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 "" Python
-"Plug 'davidhalter/jedi-vim'
-"let g:jedi#popup_on_dot = 0
-"Plug 'klen/python-mode'
+Plug 'davidhalter/jedi-vim'
+let g:jedi#popup_on_dot = 0
 
 """ Julia
 "Plug 'JuliaLang/julia-vim'
