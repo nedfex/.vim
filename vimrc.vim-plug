@@ -1,7 +1,7 @@
 scriptencoding utf-8
 
 call plug#begin('~/.vim/autoload')
-let g:plug_threads = 1                      "Disable Ruby multiple file download
+let g:plug_threads = 1                     "Disable Ruby multiple file download
 
 "" Appearance
 " Solarize colorscheme
@@ -82,6 +82,9 @@ Plug 'LaTeX-Box-Team/LaTeX-Box'
 "" Python
 Plug 'davidhalter/jedi-vim'
 let g:jedi#popup_on_dot = 0
+let g:jedi#max_doc_height = 100
+
+Plug 'fs111/pydoc.vim'
 
 """ Julia
 "Plug 'JuliaLang/julia-vim'
