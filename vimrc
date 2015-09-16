@@ -53,7 +53,6 @@ set omnifunc=syntaxcomplete#Complete             " built in text completion
 inoremap jj <Esc>
 inoremap jk <Esc>
 
-noremap :nt :NERDTree
 nnoremap <CR> :nohlsearch<CR><CR>         " turn off highlighting with enter key
 nnoremap gV `[v`]                         " highlight last inserted
 

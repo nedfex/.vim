@@ -21,7 +21,7 @@ set laststatus=2
 Plug 'bling/vim-bufferline'
 
 " Indent-Guides
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
 
 "" Outside Vim Integration
 " Fugitive (Git integration)
@@ -48,10 +48,10 @@ let g:SuperTabDefaultCompletionType = "context"
 "Plug 'scrooloose/nerdcommenter'
 
 " Unitsnips (Snippets engine)
-"Plug 'SirVer/ultisnips'
-"let g:UltiSnipsExpandTrigger = "<tab>"
-"let g:UltiSnipsJumpForwardTrigger = "<c-b>"
-"let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
+Plug 'SirVer/ultisnips'
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 
 " Vim-snippets (Library of snippets)
 "Plug 'honza/vim-snippets'
