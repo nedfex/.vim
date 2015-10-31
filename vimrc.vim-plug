@@ -54,7 +54,7 @@ let g:UltiSnipsJumpForwardTrigger = "<c-b>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 
 " Vim-snippets (Library of snippets)
-"Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 " DelimitMate
 Plug 'Raimondi/delimitMate'
@@ -73,7 +73,7 @@ Plug 'kien/ctrlp.vim'
 "Plug 'Lokaltog/vim-easymotion'
 
 " NERDTree (File system explorer)
-"Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 ""Latex
 " Latex-Box

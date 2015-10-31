@@ -15,7 +15,7 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 "" Colors
 set t_Co=256                                " enable 256 color use for terminal
-colorscheme solarized
+colorscheme gruvbox
 
 highlight Normal ctermbg=None                " transparent Background
 highlight Comment cterm=standout,bold        " make comments easier to see
