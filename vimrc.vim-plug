@@ -51,10 +51,10 @@ let g:SuperTabDefaultCompletionType = "context"
 "Plug 'scrooloose/nerdcommenter'
 
 " Unitsnips (Snippets engine)
-Plug 'SirVer/ultisnips'
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<c-b>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
+"Plug 'SirVer/ultisnips'
+"let g:UltiSnipsExpandTrigger = "<tab>"
+"let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 
 " Vim-snippets (Library of snippets)
 Plug 'honza/vim-snippets'
