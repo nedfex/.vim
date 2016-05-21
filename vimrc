@@ -22,6 +22,7 @@ highlight Comment cterm=standout,bold        " make comments easier to see
 highlight ColorColumn ctermbg=235            " colorcolumn color
 
 "" General Display
+set background=dark
 set encoding=utf-8
 
 set nowrap				          " don't wrap lines
